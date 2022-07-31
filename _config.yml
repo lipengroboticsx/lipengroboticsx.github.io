@@ -123,20 +123,20 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 navigation_header:
 - title: Home
   url: /
-- title: Datasets
-  url: /
+- title: Dataset
+  url: /dataset
 - title: Tool
-  url: /
+  url: /tool
 - title: Task
-  url: /
+  url: /task
 - title: Publication
-  url: /
+  url: /publication
 - title: About
-  url: /
+  url: /about
 
 navigation_footer:
-- title: Created by David Darnes
-  url: https://darn.es
+- title: Tencent Robotics X Lab
+  url: https://www.tencent.com/en-us/business/robotics.html
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/DavidDarnes
