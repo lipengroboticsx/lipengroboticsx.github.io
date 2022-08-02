@@ -34,7 +34,17 @@ pip install -r requirements.txt
 
 Alternatively, we also provide a ready-to-use [Docker](https://www.docker.com/) with all dependencies installed in our git repository (TODO link). To use it, Docker should have been already successfully installed.
 
+### Test
 
+now you should be able to run the following command to launch the event recorder with your Prophesee event camera connected to the computer:
+
+```p
+metavision_viewer
+```
+
+You should also be able to record using ZED by running the official [sample](https://github.com/stereolabs/zed-examples/tree/master/svo%20recording/recording/python). If you don't have a camera or don't intend to record, you could just check if `pyzed` and `metavision_core` modules can be successfully imported in your python program. If any failure, you should inspect your installation if done manually and, unfortunately, troubleshooting this is beyond the scope of this instruction.
+
+ 
 
 ## Data Processing
 
