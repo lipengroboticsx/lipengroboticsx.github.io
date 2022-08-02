@@ -1,4 +1,8 @@
-download instruction
+## Download
+
+We have published the full-size [raw dataset](https://share.weiyun.com/avv8jpv4) without processing and the selected 500 [processed samples](https://share.weiyun.com/Tk3mm9O0) for review. By downloading the data, you accept and agree to the terms (TODO) of this license.
+
+
 
 ## File Structure
 
