@@ -88,19 +88,28 @@ now you should be able to see the prompt indicating that these two applications 
 
 TODO pictures of connection established.
 
-**Last**, operate the main recorder to record following the interactive instruction. The main recorder will automatically communicate with and command Hand Engine and NatNet client to record. Nevertheless, we do recommend you to regularly check Hand Engine and NatNet client to see if anything going wrong.
+**Last**, operate the main recorder to record following the interactive instruction. The main recorder will automatically communicate with and command Hand Engine and NatNet client to record. Nevertheless, we do recommend you to regularly check Hand Engine and NatNet client to see if bug.
 
 TODO picture of a complete take
 
 ## Annotator
 
-data annotation
-
-
+To annotate, you should **first** have the processed data under the directory `/data/recording_id/processed`. The processed data can be downloaded from the selected [processed sampled](https://lipengroboticsx.github.io/dataset/) or obtained by processing the raw data as suggested in [Data Processing](#data-processing).  **Next**, you run the following command to launch the annotation application. Note that our annotation application is independent of ZED SDK and Metavision SDK, so you can use the application without them installed.
 
 ```p
-
+python src/annotate.py
 ```
 
-### 
+Now you should be able to see the following interface:
+
+TODO annotation interface
+
+![](/home/lin/Projects/lipengroboticsx.github.io/assets/images/annotation tool.png)
+
+The layout of sub-windows is
+
+| fixed third-person view RGB      | fixed third-person view Depth      | egocentric view event |
+| -------------------------------- | ---------------------------------- | --------------------- |
+| egocentric first-person view RGB | egocentric first-person view Depth | hand motion           |
+| fixed first-person view RGB      | fixed first-person view Depth      | information panel     |
 
