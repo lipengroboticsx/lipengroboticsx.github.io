@@ -48,16 +48,59 @@ You should also be able to record using ZED by running the official [sample](htt
 
 ## Data Processing
 
-data processing
+Our data processing script converts the raw data to the format as described in [Processed Data](https://lipengroboticsx.github.io/dataset/). To run the script, you have to **first** put the raw data of each recording into an individual folder named by the recording ID under the directory `/data` and organize the data from different sensors as displayed in [Raw Data](https://lipengroboticsx.github.io/dataset/). This sorting can be much effortless if the raw data is recorded using our recorder program since they will be produced in a way ready to be processed.
+
+**Second**, once the data organized appropriately, all you need to do is just running the following command:
+
+```p
+python src/postprocess.py
+```
 
 
 
 ## Recorder
 
-recording a session
+Our recorder integrates the functionality of arranging the content to be recorded, recording with multiple devices, and annotating the result of the recording into one user-friendly interactive program. 
 
+**First**, enable all recording devices and ensure each of them function smoothly. Three ZED cameras and one Prophesee event camera should be wired to the host where the recorder program is supposed to run. StretchSense MoCap Pro gloves should be wireless connected to a Windows machine with its official client software Hand Engine running. OptiTrack server can be either operated on a separate host, recommended by us, or on the same host as any of the two aforementioned ones a.l.a. the computational resource allows and the performance will not be thus compromised. You may need to configure the firewall on each machine to allow the smooth (UDP) communication among them.
 
+**Second**, update the configuration in our OptiTrack NatNet client code and rebuild the NatNet client. You need to set the values of OptiTrack server IP address (TODO Variable Name), recorder IP address (TODO Variable Name), and recorder port (TODO Variable Name) according to your network setting in the file `/recording/Optitrack_NatNet_client/src/example_main.cpp`.  TODO rebuild instruction
+
+```p
+
+```
+
+**Third**, initialize your lists of subjects and objects in the corresponding files `/register/subjects.csv` and `/register/objects.csv` respectively. Each subject and object should lie in a new line. Please check the sample lists in our repository for detailed format.
+
+**Next**, launch the main recorder application:
+
+```
+
+```
+
+and the NatNet client:
+
+```
+
+```
+
+now you should be able to see the prompt indicating that these two applications have successfully communicated with each other, if everything goes well, as shown blow 
+
+TODO pictures of connection established.
+
+**Last**, operate the main recorder to record following the interactive instruction. The main recorder will automatically communicate with and command Hand Engine and NatNet client to record. Nevertheless, we do recommend you to regularly check Hand Engine and NatNet client to see if anything going wrong.
+
+TODO picture of a complete take
 
 ## Annotator
 
 data annotation
+
+
+
+```p
+
+```
+
+### 
+
