@@ -102,9 +102,7 @@ python src/annotate.py
 
 Now you should be able to see the following interface:
 
-TODO annotation interface
-
-{% include figure.html image="/assets/images/annotation.png"%}
+![](https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/main/assets/images/annotation%20tool.png)
 
 The layout of sub-windows is described below. On the left top of each sub-window, the information of the current frame is given as: {current frame number} / {total number of frames} month:day hour:minute:second:millisecond. 
 
