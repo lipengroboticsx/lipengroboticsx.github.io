@@ -113,19 +113,19 @@ Inside the information panel (bottom right sub-window), the annotation result is
 ![](https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/main/assets/images/info_panel_explanation.png)
 
 1. the status of the annotation: finished, unfinished or problematic
-2. which hand used to throw at the moment of *throw*
-3. the position of the thrower at the moment of *throw*
-4. the position of the catcher at the moment of *throw*
+2. which hand used to throw at moment *throw*
+3. the position of the thrower at moment *throw*
+4. the position of the catcher at moment *throw*
 5. the average flying speed of the thrown object
-6.  the vertical hand position of the thrower at the moment of *throw*
-7. the horizontal hand position of the thrower at the moment of *throw*
-8. the vertical hand position of the catcher at the moment of *throw*
-9. the horizontal hand position of the catcher at the moment of *throw*
+6.  the vertical hand position of the thrower at moment *throw*
+7. the horizontal hand position of the thrower at moment *throw*
+8. the vertical hand position of the catcher at moment *throw*
+9. the horizontal hand position of the catcher at moment *throw*
 10. the frame number and the timestamp of the moment *throw*
-11. which hand used to catch at the moment of *catch (stable)* 
-12. the position of the catcher at the moment of *catch (touch)*
-13. the vertical hand position of the catcher at the moment of *catch (stable)*
-14. the horizontal hand position of the catcher at the moment of *catch (stable)*
+11. which hand used to catch at moment *catch (stable)* 
+12. the position of the catcher at moment *catch (touch)*
+13. the vertical hand position of the catcher at moment *catch (stable)*
+14. the horizontal hand position of the catcher at moment *catch (stable)*
 15. the frame number and the timestamp of the moment *catch (touch)*
 16. the frame number and the timestamp of the moment *catch (stable)*
 
@@ -133,22 +133,22 @@ Inside the information panel (bottom right sub-window), the annotation result is
 
 The keys to operate the application are defined as:
 
-* right arrow: next frame
-* left arrow: last frame
-* down arrow: next recording
-* up arrow: last recording
-* return: take the current frame as a moment of throw, catch (touch), and catch (stable) in order
-* del: remove the last annotated moment
-* Q: switch the values of hand(s) used to throw
-* A
-* S
-* D
-* F
-* Z
-* C
-* V
-* space: switch the status of annotation between finished and unfinished
-* backspace: label/unlabel the recording as problematic
+* **right arrow**: next frame
+* **left arrow**: last frame
+* **down arrow**: next recording
+* **up arrow**: last recording
+* **return**: take the current frame as a moment of throw, catch (touch), and catch (stable) in order
+* **del**: remove the last annotated moment
+* **Q**: switch the values of info panel 2 among left, right, and both 
+* **A**: switch the values of info panel 6 among overhead, overhand, chest, and underhand
+* **S**: switch the values of info panel 7 among left, middle, and right
+* **D**: switch the values of info panel 8 among overhead, overhand, chest, and underhand
+* **F**: switch the values of info panel 9 among left, middle, and right
+* **Z**: switch the values of info panel 11 among left, right, and both
+* **C**: switch the values of info panel 2 among overhead, overhand, chest, and underhand
+* **V**: switch the values of info panel 2 among left, middle, and right
+* **space**: switch the values of info panel 1 between finished and unfinished
+* **backspace**: switch the values of info panel 1 between problematic and unfinished
 
 All modification to the annotation result will be immediately saved in the corresponding annotation file under the directory `/annotations/recording_id.json`.
 
