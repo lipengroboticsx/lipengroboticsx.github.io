@@ -104,7 +104,7 @@ Now you should be able to see the following interface:
 
 TODO annotation interface
 
-![](/home/lin/Projects/lipengroboticsx.github.io/assets/images/annotation tool.png)
+{% include figure.html image="/assets/images/annotation.png"%}
 
 The layout of sub-windows is described below. On the left top of each sub-window, the information of the current frame is given as: {current frame number} / {total number of frames} month:day hour:minute:second:millisecond. 
 
