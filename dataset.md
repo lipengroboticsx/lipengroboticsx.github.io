@@ -58,47 +58,45 @@ We have published the full-size [raw dataset](https://share.weiyun.com/avv8jpv4)
 
 ###  Annotation
 
-* status: annotation status. TODO: be removed in the released version.
+* **status**: annotation status.
   * 0: not finished
   * 1: finished
   * -1: problematic, need further inspect
-* take_id: the id of the take
-* object: the name of the object being thrown or caught in this take
-* catch_result: the result of catching
+* **take_id**: the id of the take
+* **object**: the name of the object being thrown or caught in this take
+* **catch_result**: the result of catching
   * 0: failed
   * 1: success
-* sub1_cmd: the command given to the subject 1 to instruct the behavior of throwing or catching. Please refer to log.xlsx for the explanation of the attributes below.
-  * subject_id: the id of the subject 1
-  * hand
-  * position
-  * action
-* sub2_cmd: the command given to the subject 2.
-  * subject_id: the id of the subject 2
-  * hand
-  * position
-  * action
-  * hand_vertical
-  * hand_horizontal: this attribute is only given when the action to be performed by the subject 2 is catch.
-  * throwing_speed: this is only given when the action to be performed by the subject 2 is throw
-* throw: annotation data for the action throw.
-  * hand: single or both hands for throwing the object
-  * hand_vertical_thrower: the relative vertical position of the hand of the thrower at the throwing time point.
-    * same options as above
-  * hand_vertical_catcher: the relative vertical position of the hand of the catcher at the throwing time point.
-  * hand_horizontal_thrower: the relative horizontal position of the hand of the thrower at the throwing time point.
-  * hand_horizontal_catcher: the relative horizontal position of the hand of the catcher at the throwing time point.
-  * position_thrower: the position of the thrower in the local coordinates at the throwing time point. 
-    * x, z
-  * position_catcher: the position of the catcher in the local coordinates at the throwing time point.
-  * time_point: the timestamps of each stream at the throwing time point. An object is concerned as thrown out when there is no contact observed between the object and the hand.
+* **sub1_cmd**: the command given to the primary subject to instruct the behavior of throwing or catching. Please refer to log.xlsx for the explanation of the attributes below.
+  * **subject_id**: the id of the primary subject
+  * **hand**
+  * **position**
+  * **action**
+* **sub2_cmd**: the command given to the auxiliary subject.
+  * **subject_id**: the id of the auxiliary subject
+  * **hand**
+  * **position**
+  * **action**
+  * **hand_vertical**
+  * **hand_horizontal**: this attribute is only given when the action to be performed by the auxiliary subject is catch.
+  * **throwing_speed**: this is only given when the action to be performed by the auxiliary subject is throw
+* **throw**: annotation data for the action throw.
+  * **hand**: left, right or both hands used to throw the object
+  * **hand_vertical_thrower**: the vertical position of the hand of the thrower at moment *throw*.
+  * **hand_vertical_catcher**: the vertical position of the catcher's hand(s) at moment *throw*.
+  * **hand_horizontal_thrower**: the horizontal position of the thrower's hand(s) at moment *throw*.
+  * **hand_horizontal_catcher**: the horizontal position of the catcher's hand(s) at moment *throw*.
+  * **position_thrower**: the position of the thrower in the local coordinates at moment *throw*. 
+    * x, y
+  * **position_catcher**: the position of the catcher in the local coordinates at moment *throw*.
+  * **time_point**: the timestamps of each stream at moment *throw*.
     * stream id
-      * frame: the frame number of the corresponding stream
-      * timestamp: the timestamp of the corresponding stream (retrieved from the corresponding timestamp file)
-* catch: annotation data for the action catch
-  * hand: single or both hands for catching the object
-  * hand_vertical: the relative vertical position of the hand of the catcher at the catching time point (touch).
-  * hand_horizontal: the relative horizontal position of the hand of the catcher at the catching time point (touch).
-  * position: the position of the catcher in the local coordinates at the catching time point (touch).
-  * time_point_touch: the timestamps of each stream when catching happens (i.e., when the hand of the catcher first touches the object in the flight).
-    * same data format as above
-  * time_point_stable: the timestamps of each stream when catching stablizes (i.e., the pose between the hands and the object keeps, relatively, approximately static).
+      * frame: the frame number of the stream
+      * timestamp: the timestamp of the stream
+* **catch**: annotation data for the action catch
+  * **hand**: left, right or both hands used to catch the object
+  * **hand_vertical**: the vertical position of the catcher's hand(s) at moment *catch (stable)*.
+  * **hand_horizontal**: the horizontal position of the catcher's hand(s) at moment *catch (stable)*.
+  * **position**: the position of the catcher in the local coordinates at moment *catch (touch)*.
+  * **time_point_touch**: the timestamps of each stream at moment *catch (touch)*.
+  * **time_point_stable**: the timestamps of each stream at moment *catch (stable)*.

@@ -1,9 +1,20 @@
 ---
-title: Human Throw-Catch Dataset
-feature_image: "https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/main/assets/images/throw-catch.png"
+title:  
+feature_image: "/assets/images/throw-catch.png"
 excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-16">
+    		<video muted autoplay loop width="100%">
+        		<source src="assets/videos/throw-catch-clip.mp4" type="video/mp4">
+                	<source src="aligned.mp4" type="video/mp4">
+        		sorry
+    		</video>
+        </div>
+    </div>
+</div>
 
 
 Catching and throwing are important skills developed by human beings, and are pervasive in human teamwork, recreation, and athletics. The catching and throwing abilities, such as catching a ball, or throwing a bag of crisps to a friend, enable the passing of an object from one person to another to be efficient. Such abilities, once properly learned by a robot, can accelerate the transfer of an object by a robot to another robot or a person, and also enable the transfer to be completed in a more precise manner. Understanding and modelling how humans catch and throw an object can therefore advance the development of more dexterous and responsive robots, as well as better human-robot collaboration.
