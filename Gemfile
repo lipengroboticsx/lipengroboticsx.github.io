@@ -1,3 +1,6 @@
+# source "https://rubygems.org"
+
+# gemspec
 source "https://rubygems.org"
 
 # When you want to use a different Jekyll version, change it below, save the
@@ -5,7 +8,7 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 gem "jekyll", "~> 4.3.1"
-gem "bay_jekyll_theme"
+gem "alembic-jekyll-theme"
 
 # Plugins
 group :jekyll_plugins do

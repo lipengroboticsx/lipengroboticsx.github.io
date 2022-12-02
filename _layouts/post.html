@@ -1,47 +1,25 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
+---
+layout: default
+---
 
-  <body>
-    {% include header.html %}
+{% include site-header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="post">
+<main class="main  container">
 
-          <header class="post-header">
+  <article class="article  article--post  content  typeset">
 
-            {% if page.draft %}
-              {% include draft-banner.html %}
-            {% endif %}
+    <h1>{{ page.title }}</h1>
+    {% include post-meta.html %}
+    {{ content }}
 
-            <h1 class="post-title">
-            {% if page.headline_formatted_title %}
-              {{ page.headline_formatted_title | newline_to_br }}
-            {% else %}
-              {{ page.title }}
-            {% endif %}
-            </h1>
+    {% include nav-share.html %}
 
-            {% if page.subtitle %}<h1 class="post-subtitle">{{ page.subtitle }}</h1>{% endif %}
-            <p class="post-meta"><span class="post-date">{{ page.date | date: "%B %-d, %Y" }}
-            </span>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-          </header>
+    {% include post-comments.html %}
 
-          <article class="post-content">
-            {{ content }}
-          </article>
+  </article>
 
-          {% if page.draft %}
-              {% include draft-banner.html %}
-          {% endif %}
+  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
 
-      </div>
-      </div>
-    </div>
+</main>
 
-    {% include footer.html %}
-
-    {% include foot.html %}
-  </body>
-</html>
+{% include site-footer.html %}
