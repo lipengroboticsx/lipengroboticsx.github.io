@@ -1,8 +1,22 @@
+## Information
+
 We have published the full-size [raw dataset](https://share.weiyun.com/avv8jpv4) without processing and the selected 500 [processed samples](https://share.weiyun.com/Tk3mm9O0) for review. By downloading the data, you accept and agree to the terms (TODO) of this license.
 
+### Tasks
 
 
-## File Structure
+
+| ![](https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/main/assets/images/ego-rgb-square.png) | ![](https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/main/assets/images/ego-rgb-square.png) | ![](https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/main/assets/images/ego-rgb-square.png) |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                         task1                          |                            task2                            |                         task3                          |
+| ![](https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/main/assets/images/ego-rgb-square.png) | ![](https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/main/assets/images/ego-rgb-square.png) | ![](https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/main/assets/images/ego-rgb-square.png) |
+|                             task4                              |                             task5                              |                          task6                              |
+
+
+
+
+
+### File Structure
 
 * **log.xlsx**: logbook with the recording parameters of all takes
 * **subjects.csv**: the list of the subjects participating in the experiments

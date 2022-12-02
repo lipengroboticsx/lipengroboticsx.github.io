@@ -24,38 +24,28 @@ excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projec
 
 <br>
 
-# Introduction
+## Introduction
 
 Catching and throwing are important skills developed by human beings, and are pervasive in human teamwork, recreation, and athletics. The catching and throwing abilities, such as catching a ball, or throwing a bag of crisps to a friend, enable the passing of an object from one person to another to be efficient. Such abilities, once properly learned by a robot, can accelerate the transfer of an object by a robot to another robot or a person, and also enable the transfer to be completed in a more precise manner. Understanding and modelling how humans catch and throw an object can therefore advance the development of more dexterous and responsive robots, as well as better human-robot collaboration.
 
 <br>
 
-# The Dataset in Numbers
-Some facts about the $H^2TC$.
+## The Dataset in Numbers
+Some facts about our dataset.
 
-<!-- ----- -->
-Subjects   &#8195;&#8195;&#8195;&#8195;&#8195;          xx subjects
-
-<!-- --- -->
-
-Tasks &#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#160;  xx tasks
-
-<!-- --- -->
-Recordings   &#8195;&#8195;&#8195;&#160;&#160;       xx recordings
-
-<!-- --- -->
-Actions &#8195;&#8195;&#8195;&#8195;&#8195;&#160;  xx actions
-
-<!-- --- -->
-Objects   &#8195;&#8195;&#8195;&#8195;&#8195;&#160;      xx objects
-
-<!-- --- -->
-Annotations  &#8195;&#8195;&#8195;&#160;  xx annotations
+| | |
+|  ----       | ----          |
+| Subjects    | xx subjects   |
+|Tasks        |  xx tasks     |
+|Recordings   | xx recordings |
+|Actions      |  xx actions   |
+|Objects      | xx objects    |
+|Annotations  |xx             |
 
 <br>
 
 
-# Cite
+## Cite
 
 If you use our Dataset, please consider citing
 

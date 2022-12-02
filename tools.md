@@ -1,6 +1,8 @@
+## Tools
+
 We have developed three tools to [process](#data-processing) the raw data, [record](#recorder) and [annotate](#annotator) a throw-catch activity. All source code has been published on GitHub. TODO github link
 
-## Dependencies
+### Dependencies
 
 To run our code, some dependencies have to be installed. First, the default, and well-tested, development environment is
 
@@ -92,6 +94,8 @@ TODO pictures of connection established.
 
 TODO picture of a complete take
 
+
+
 ## Annotator
 
 To annotate, you should **first** have the processed data under the directory `/data/recording_id/processed`. The processed data can be downloaded from the selected [processed sampled](https://lipengroboticsx.github.io/dataset/) or obtained by processing the raw data as suggested in [Data Processing](#data-processing).  **Next**, you run the following command to launch the annotation application. Note that our annotation application is independent of ZED SDK and Metavision SDK, so you can use the application without them installed.
@@ -151,4 +155,3 @@ The keys to operate the application are defined as:
 * **backspace**: switch the values of info panel 1 between problematic and unfinished
 
 All modification to the annotation result will be immediately saved in the corresponding annotation file under the directory `/annotations/recording_id.json`.
-
