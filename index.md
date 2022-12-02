@@ -1,33 +1,58 @@
 ---
-title:  
-feature_image: "/assets/images/throw-catch.png"
-excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
+layout: home
+# profile_picture:
+#   src: /assets/img/profile-pic.jpg
+#   alt: website picture
 ---
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-16">
-    		<video muted autoplay loop width="100%">
-        		<source src="assets/videos/throw-catch-clip.mp4" type="video/mp4">
-                	<source src="aligned.mp4" type="video/mp4">
-        		sorry
-    		</video>
-        </div>
-    </div>
-</div>
+![](https://raw.githubusercontent.com/lipengroboticsx/lipengroboticsx.github.io/lx_test/assets/images/home.png)
 
 
-Catching and throwing are important skills developed by human beings, and are pervasive in human teamwork, recreation, and athletics. The catching and throwing abilities, such as catching a ball, or throwing a bag of crisps to a friend, enable the passing of an object from one person to another to be efficient. Such abilities, once properly learned by a robot, can accelerate the transfer of an object by a robot to another robot or a person, and also enable the transfer to be completed in a more precise manner. Understanding and modelling how humans catch and throw an object can therefore advance the development of more dexterous and responsive robots, as well as better human-robot collaboration.
+<br>
 
-{% include video.html id="TTMi05F0iEE" %}
+# Introduction
 
-{% include button.html text="Paper" link="https://buymeacoffee.com/daviddarnes#support" color="#f68140" %} {% include button.html text="Github" icon="github" link="https://github.com/daviddarnes/alembic" color="#0366d6" %} {% include button.html text="Dataset" link="https://lipengroboticsx.github.io/dataset/" color="#f68159" %} {% include button.html text="Tweet it" icon="twitter" link="https://twitter.com/intent/tweet/?url=https://alembic.darn.es&text=Alembic%20-%20A%20Jekyll%20boilerplate%20theme&via=DavidDarnes" color="#0d94e7" %} 
+Dynamic dexterity ....
+However, there has been no dateset collected for this domain. In order to fill the gap in learning dynamic manipulation
+skills, we introduce the first dataset of human-human throw&catch demonstrations. In total,
+concurrently
+In addition, we provide a suite of useful tools to facilitate ....
+a heterogeneous collection of objects commonly seen in domestic and industrial settings.
+easy-to-use
+The dateset and accompanying tools and documents are available at URL. We expect the dateset presented in this
+work to benefit a boarder community
 
-## Citation
+<br>
 
-```
-bibtex
-```
+# The Dataset in Numbers
+Some facts about the $H^2TC$.
 
+-----
 
+Subjects   &#8195;&#8195;&#8195;&#8195;&#8195;          xx subjects
+
+---
+Tasks &#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#160;  xx tasks
+
+---
+Recordings   &#8195;&#8195;&#8195;&#160;&#160;       xx
+
+---
+Actions &#8195;&#8195;&#8195;&#8195;&#8195;&#160;  xx
+
+---
+Objects   &#8195;&#8195;&#8195;&#8195;&#8195;&#160;      xx
+
+---
+Annotations  &#8195;&#8195;&#8195;&#160;  xx
+
+<br>
+
+# Cite
+
+If you use our Dataset, please consider citing
+
+> @article{
+}
+>
 

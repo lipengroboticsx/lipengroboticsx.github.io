@@ -1,34 +1,36 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
 
-{% include site-header.html %}
+  <body>
+    {% include header.html %}
 
-<main class="main  container">
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="blog">
+          <h1 class="page-heading">{{ page.title }}</h1>
+          {{ content }}
 
-  <div class="content">
+          <p class="blog-post-list">
+            {% for post in site.posts %}
 
-    <article class="article  article--page  typeset">
+              {% if post.draft != true %}
+                <span class="blog-post-date">{{ post.date | date: "%-m/%-d/%y" }}</span>
+                <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
+                  {{ post.title }}
+                </a>
+                <br />
 
-      {% if paginator.posts %}
-        {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-        <h1>{{ collectiondata.title }}</h1>
-        {{ collectiondata.description | markdownify }}
+              {% endif %}
 
-      {% else %}
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-        
-      {% endif %}
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </div>
 
-    </article>
+    {% include footer.html %}
 
-    {% include post-list.html %}
-
-  </div>
-
-  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
-
-</main>
-
-{% include site-footer.html %}
+    {% include foot.html %}
+  </body>
+</html>
