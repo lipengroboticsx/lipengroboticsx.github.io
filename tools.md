@@ -1,8 +1,14 @@
-## Tools
+---
+title:  Tools
+# feature_image: "/assets/images/throw-catch.png"
+excerpt: 
+---
+
+<!-- #### Tools -->
 
 We have developed three tools to [process](#data-processing) the raw data, [record](#recorder) and [annotate](#annotator) a throw-catch activity. All source code has been published on GitHub. TODO github link
 
-### Dependencies
+##### Dependencies
 
 To run our code, some dependencies have to be installed. First, the default, and well-tested, development environment is
 
@@ -13,7 +19,7 @@ To run our code, some dependencies have to be installed. First, the default, and
 
 We have not tested our code on other development environments, so you are recommended to configure the same, or at least similar, environment for the best experience.
 
-### Manual Installation
+##### Manual Installation
 
 Second, you need to install [ZED SDK](https://www.stereolabs.com/docs/installation/) (3.7.6) and [Metavision SDK](https://docs.prophesee.ai/stable/installation/index.html) (TODO) following the official guidance in the links in order to record and process the data of ZED and Prophesee Event cameras respectively. For Metavision SDK, the machine learning modules are not required in our code.
 
@@ -32,11 +38,11 @@ and can be automatically installed via pip:
 pip install -r requirements.txt
 ```
 
-### Docker
+##### Docker
 
 Alternatively, we also provide a ready-to-use [Docker](https://www.docker.com/) with all dependencies installed in our git repository (TODO link). To use it, Docker should have been already successfully installed.
 
-### Test
+##### Test
 
 now you should be able to run the following command to launch the event recorder with your Prophesee event camera connected to the computer:
 
@@ -48,7 +54,7 @@ You should also be able to record using ZED by running the official [sample](htt
 
  
 
-## Data Processing
+#### Data Processing
 
 Our data processing script converts the raw data to the format as described in [Processed Data](https://lipengroboticsx.github.io/dataset/). To run the script, you have to **first** put the raw data of each recording into an individual folder named by the recording ID under the directory `/data` and organize the data from different sensors as displayed in [Raw Data](https://lipengroboticsx.github.io/dataset/). This sorting can be much effortless if the raw data is recorded using our recorder program since they will be produced in a way ready to be processed.
 
@@ -60,7 +66,7 @@ python src/postprocess.py
 
 
 
-## Recorder
+#### Recorder
 
 Our recorder integrates the functionality of arranging the content to be recorded, recording with multiple devices, and annotating the result of the recording into one user-friendly interactive program. 
 
@@ -96,7 +102,7 @@ TODO picture of a complete take
 
 
 
-## Annotator
+#### Annotator
 
 To annotate, you should **first** have the processed data under the directory `/data/recording_id/processed`. The processed data can be downloaded from the selected [processed sampled](https://lipengroboticsx.github.io/dataset/) or obtained by processing the raw data as suggested in [Data Processing](#data-processing).  **Next**, you run the following command to launch the annotation application. Note that our annotation application is independent of ZED SDK and Metavision SDK, so you can use the application without them installed.
 

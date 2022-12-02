@@ -1,7 +1,7 @@
 ---
 title:  
 # feature_image: "/assets/images/throw-catch.png"
-excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
+excerpt: 
 ---
 
 <div class="container">
@@ -24,28 +24,44 @@ excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projec
 
 <br>
 
-## Introduction
+#### Introduction
 
 Catching and throwing are important skills developed by human beings, and are pervasive in human teamwork, recreation, and athletics. The catching and throwing abilities, such as catching a ball, or throwing a bag of crisps to a friend, enable the passing of an object from one person to another to be efficient. Such abilities, once properly learned by a robot, can accelerate the transfer of an object by a robot to another robot or a person, and also enable the transfer to be completed in a more precise manner. Understanding and modelling how humans catch and throw an object can therefore advance the development of more dexterous and responsive robots, as well as better human-robot collaboration.
 
 <br>
 
-## The Dataset in Numbers
-Some facts about our dataset.
-
-| | |
-|  ----       | ----          |
-| Subjects    | xx subjects   |
-|Tasks        |  xx tasks     |
-|Recordings   | xx recordings |
-|Actions      |  xx actions   |
-|Objects      | xx objects    |
-|Annotations  |xx             |
+#### The Dataset in Numbers
+Some facts about our dataset:
+<table  >
+    <tr>
+        <td  bgcolor="#eeeeee">Subjects</td>
+        <td  bgcolor="#eeeeee">xx subjects </td>
+    </tr>
+    <tr>
+        <td  >Tasks</td>
+        <td  >xx tasks</td>
+    </tr>
+    <tr>
+        <td  bgcolor="#eeeeee">Recordings</td>
+        <td  bgcolor="#eeeeee">xx recordings </td>
+    </tr>
+    <tr>
+        <td  >Actions</td>
+        <td  >xx actions</td>
+    </tr>
+    <tr>
+        <td  bgcolor="#eeeeee">Objects</td>
+        <td  bgcolor="#eeeeee">xx objects</td>
+    </tr>
+    <tr>
+        <td  >Annotations</td>
+        <td  >xx annotations</td>
+    </tr>
+</table>
 
 <br>
 
-
-## Cite
+#### Cite
 
 If you use our Dataset, please consider citing
 
